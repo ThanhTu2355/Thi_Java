@@ -1,6 +1,7 @@
 package gui;
 
 import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
@@ -16,7 +17,7 @@ import model.KhachHang;
 
 /**
  *
- * Họ tên sinh viên: 
+ * Họ tên sinh viên: Nguyễn Thanh Tú
  */
 public class FrmQLKhachHang extends JFrame {
 
@@ -36,6 +37,7 @@ public class FrmQLKhachHang extends JFrame {
     public FrmQLKhachHang(String title) {
         super(title);
         createGUI();
+        processEvent();
         pack();
         //setSize(900, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -82,4 +84,23 @@ public class FrmQLKhachHang extends JFrame {
         add(p2, BorderLayout.SOUTH);
 
     } 
+
+    private void processEvent() {
+        //tiep nhan su kien cho nut Nhap du lieu khach hang
+        btDocFile.addActionListener((ActionEvent e) -> {
+            {
+                qlkh.DocKhachHang(FILE_NHAP);
+                //hien thi danh sach sinh vien len JTable
+                loadDataToJTable();
+            }
+        });
+        
+        
+    }
+    private void loadDataToJTable() {
+        model.setRowCount(0);
+        for (KhachHang kh : qlkh.getDsKhachHang()) {
+            model.addRow(new Object[]{kh.getMaso(), kh.getHoten(), kh.getSonhankhau(), kh.getChisocu(), kh.getChisomoi(), kh.getTieuThu(),kh.getTieuThu() > kh.getDinhMuc()==true ?"X":"", kh.tinhTienTra()});
+        }
+    }
 }
