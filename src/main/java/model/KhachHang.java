@@ -1,14 +1,13 @@
 package model;
-/*
-  Tác giả: Họ tên sinh viên
-*/
+
 public class KhachHang {
     private String maso;
     private String hoten;
-    private int loai;
+    private int sonhankhau;
     private double chisocu;
     private double chisomoi;            
 
+    //constructor
     public KhachHang() {
     }
 
@@ -16,61 +15,32 @@ public class KhachHang {
         this.maso = maso;
     }
 
-    public KhachHang(String maso, String hoten, int loai, double chisocu, double chisomoi) {
+    public KhachHang(String maso, String hoten, int sonhankhau, double chisocu, double chisomoi) {
         this.maso = maso;
         this.hoten = hoten;
-        this.loai = loai;
+        this.sonhankhau = sonhankhau;
         this.chisocu = chisocu;
         this.chisomoi = chisomoi;
     }
+
+    //setter và getter
+
+     
     
-    public String getMaso() {
-        return maso;
-    }
+    //phương thức tính toán    
 
-    public void setMaso(String maso) {
-        this.maso = maso;
-    }
-
-    public String getHoten() {
-        return hoten;
-    }
-
-    public void setHoten(String hoten) {
-        this.hoten = hoten;
-    }
-
-    public int getLoai() {
-        return loai;
-    }
-
-    public void setLoai(int loai) {
-        this.loai = loai;
-    }
-
-    public double getChisocu() {
-        return chisocu;
-    }
-
-    public void setChisocu(double chisocu) {
-        this.chisocu = chisocu;
-    }
-
-    public double getChisomoi() {
-        return chisomoi;
-    }
-
-    public void setChisomoi(double chisomoi) {
-        this.chisomoi = chisomoi;
-    }
-
-    //sinh viên cài đặt xử lý cho các phương thức sau    
     public double getTieuThu()
     {
-       return 0; 
+      return 0;
     }
-   
-    public double getTienTra()
+    
+    public double getDinhMuc()
+    {
+       return 0;
+    }
+    
+    
+    public double tinhTienTra()
     {
        return 0;
     }         

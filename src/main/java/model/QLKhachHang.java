@@ -1,10 +1,16 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package model;
 
 import java.util.ArrayList;
 import util.FileHelper;
-/*
-  Tác giả: Họ tên sinh viên
-*/
+
+/**
+ *
+ * @author ADMIN
+ */
 public class QLKhachHang {
 
     private ArrayList<KhachHang> dsKhachHang;
@@ -25,33 +31,36 @@ public class QLKhachHang {
         this.dsKhachHang = dsKhachHang;
     }
 
-    //sinh viên cải đặt cho các phương thức xử lý sau
    
     public void DocKhachHang(String filename) {
-        
+        //sinh viên viết code 
+      
     }
 
     public boolean GhiHoaDon(String filename) {
-        
-       return true;
+        //sinh viên viết code 
+        return true;
     }
+
    
-    public void sapXepTheoLoaiHinh() {
-               
+    public void sapXepTheoMucTieuThu() {
+        //sinh viên viết code           
     }
     
     public double getTieuThuCaoNhat()
     {
-      return 0;    
+      double max=0;
+      return max;
     }
     
     public double getTieuThuThapNhat()
     {
-       return 0;  
+       double min=0;
+       return min;       
     }
     
     public double getTieuThuTrungBinh()
     {
-      return 0;   
+       return 0;     
     }
 }
