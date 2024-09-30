@@ -1,12 +1,10 @@
 package gui;
 
 import java.awt.BorderLayout;
-import java.text.DecimalFormat;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -18,7 +16,7 @@ import model.KhachHang;
 
 /**
  *
- * @author ADMIN
+ * Họ tên sinh viên: 
  */
 public class FrmQLKhachHang extends JFrame {
 

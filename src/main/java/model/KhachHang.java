@@ -1,5 +1,9 @@
 package model;
 
+/**
+ *
+ * Họ tên sinh viên: 
+ */
 public class KhachHang {
     private String maso;
     private String hoten;
